@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./style.css">
+    <title>茶肆</title>
+</head>
+<style>
+	#main{
+		margin-top:0px;
+		margin-left:-100px;
+	}
+	#bg{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		min-height: 3780px;
+		min-width:3920px;
+		background-image: url("contact/bg3.jpg");
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position: center;	
+	}
+	#house{
+		width:100%;
+		position:absolute;
+		margin-top:0px;
+		animation:house 2.6s ease infinite;
+	}
+	@keyframes house{
+		0%{margin-top:0px}
+		50%{margin-top:40px}
+		100%{margin-top:0px}
+	}
+	#chasi{
+		width:6%;
+		margin-top:1800px;
+		margin-left:2350px;
+		position:absolute;
+	}
+	.yan{
+		width:100%;
+		margin-left:0px;
+		position:absolute;
+		animation:yan 2s linear infinite;
+	}
+	@keyframes yan{
+		0%{margin-left:0px}
+		50%{margin-left:40px}
+		100%{margin-left:0px}
+	}
+</style>
+<body>
+    <div id="main">
+    	<div id="bg">
+    		<img id="house" src="contact/house.png">
+			
+			<img class="yan" src="contact/yan1.png">
+			<img class="yan" src="contact/yan2.png">
+			<img class="yan" src="contact/yan3.png">
+			<img class="yan" src="contact/yan4.png">
+			<img class="yan" src="contact/yan5.png">
+			<a href="index4.html"><img id="chasi" src="contact/chasi.png"></a>
+    	</div>
+    </div>
+</body>
+
+</html>

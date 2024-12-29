@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<title>点茶</title>
+		<style>
+			html,body {
+				width:640px;
+				height:1030px;
+				margin:0;
+				padding:0;
+				
+			}
+			#bg{
+				width:640px;
+				height:1030px;
+				background-image: url("make/bg1.jpg");
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			.tool1,.tool2{
+				width:640px;
+				height:1030px;
+				position:absolute;
+			}
+			#chamo1{
+				opacity:0;
+			}
+			#chasui{
+				opacity: 0;
+			}
+			.gif{
+				width:640px;
+				opacity:0;
+				position:absolute;
+			}
+			@keyframes opa{
+				0%{opacity:0}
+				50%{opacity:1}
+				70%{opacity:0.8}
+				100%{opacity:0}
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div id="top">
+				<a href="index5.html"><img id="tubiao" class="tool1" src="make/tubiao.png" style="left:-80px;top:-10px"></a>
+				<img id="chahu" class="tool1" src="make/chahu.png" style="left:-80px;top:-10px">
+				<img id="chajiu" class="tool1" src='make/chajiu.png' style="left:230px;top:-70px">
+				<img id="chalu" class="tool1" src="make/chalu.png" style="left:-130px;top:50px">
+				<img id="chanian" class="tool1" src="make/chanian.png" style="left:560px;top:-50px">
+				<img id="shaiwang" class="tool1" src="make/shaiwang.png" style="left:-20px;top:-20px">
+			</div>
+			<div id="bottom">
+				<img id="chaguan" class="tool2" src="make/chaguan.png" style="left:-100px">
+			    <img id="chabing" class="tool2" src="make/chabing.png" style="left:60px">
+			    <img id="chasheng" class="tool2" src="make/chasheng.png">
+			    <img id="chamo1" class="tool2" src="make/chamo1.png">
+				<img id="chamo2" class="tool2" src="make/chamo2.png">
+			    <img id="chasui" class="tool2" src="make/chasui.png">
+			</div>
+			<div id="bg">
+				<img id="zhicha" class="gif" src="make/zhichaact.gif" >
+				<img id="niancha" class="gif" src="make/nianchaact.gif">
+				<img id="daocha" class="gif" src="make/daochaact.gif">
+				<img id="diancha" class="gif" src="make/dianchaact.gif">
+				<img id="luocha" class="gif" src="make/luochaact.gif">
+				<img id="ruguan" class="gif" src="make/ruguanact.gif">
+				<img id="tangzhan" class="gif" src="make/tangzhanact.gif">
+				<img id="tiaogao" class="gif" src="make/tiaogengact.gif">
+			</div>
+		</div>
+	</body>
+	<script>
+		document.addEventListener("touchstart",function(e){
+			window.location.href = 'index2.html';//触屏开始的y坐标点
+		},false);
+		var zhicha=document.getElementById("zhicha");
+		zhicha.style.opacity=0;
+		var niancha=document.getElementById("niancha");
+		niancha.style.opacity=0;
+		var daocha=document.getElementById("daocha");
+		daocha.style.opacity=0;
+		var diancha=document.getElementById("diancha");
+		daincha.style.opacity=0;
+		var luocha=document.getElementById("luocha");
+		luocha.style.opacity=0;
+		var ruguan=document.getElementById("ruguan");
+		ruguan.style.opacity=0;
+		var tangzhan=document.getElementById("tangzhan");
+		luocha.style.opacity=0;
+		document.getElementById("tiaogao").style.opacity=0;
+		zhicha.style.animation="opa 4s ease";
+		zhicha.addEventListener("animationend",function(){
+			niancha.style.animation="opa 4s ease";
+		})
+		
+		
+	</script>
+		
+</html>
